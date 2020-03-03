@@ -10,17 +10,17 @@ import numpy as np
 import pandas as pd
 import time
 
-playersCsvHead = pd.DataFrame(columns=['Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers'])
-playersCsvHead.to_csv('Players.csv', mode='a')
+playersCsvHead = pd.DataFrame(columns=['Id','Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers'])
+playersCsvHead.to_csv('./Scrapped_Data/Players.csv', mode='a')
 
-transfersCsvHead = pd.DataFrame(columns=['Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
-transfersCsvHead.to_csv('Transfers.csv', mode='a')
+transfersCsvHead = pd.DataFrame(columns=['Player_Id','Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
+transfersCsvHead.to_csv('./Scrapped_Data/Transfers.csv', mode='a')
 
-StatsCsvHead = pd.DataFrame(columns=['Name', 'Position', 'Team', 'Season', 'Competition', 'Attribute', 'Value'])
-StatsCsvHead.to_csv('stats.csv', mode='a')
+StatsCsvHead = pd.DataFrame(columns=['Player_Id','Name', 'Position', 'Team', 'Season', 'Competition', 'Attribute', 'Value'])
+StatsCsvHead.to_csv('./Scrapped_Data/stats.csv', mode='a')
 
-NatCsvHead = pd.DataFrame(columns = ['Name', 'Position', 'Competition', 'Attribute', 'Value'])
-NatCsvHead.to_csv('natstats.csv', mode='a')
+NatCsvHead = pd.DataFrame(columns = ['Player_Id','Name', 'Position', 'Competition', 'Attribute', 'Value'])
+NatCsvHead.to_csv('./Scrapped_Data/natstats.csv', mode='a')
 
 opts = Options()
 opts.headless = True
@@ -34,10 +34,10 @@ allTeams = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' 
 teamLinks = pd.read_csv('Prerequisit Data/teamlinks.csv')
 playerLinksData = pd.read_csv('Prerequisit Data/playerlinks.csv')
 
-def PlayerPage(link):
+def PlayerPage(link, playerId):
 	
-	playersData = pd.DataFrame(columns=['Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers'])
-	transfersData = pd.DataFrame(columns=['Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
+	playersData = pd.DataFrame(columns=['Id', 'Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers'])
+	transfersData = pd.DataFrame(columns=['Player_Id', 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
 
 	driver.get(link)
 
@@ -98,9 +98,9 @@ def PlayerPage(link):
 
 	for i in range(numOfTransfers):
 
-		transfersData = transfersData.append({'Name': name, 'From': teamLeft[i].text, 'To': teamJoined[i].text, 'Fee': fees[i].text, 'Market Value': markVals[i].text, 'Season': transferSeasons[i].text, 'Date': transferDates[i].text}, ignore_index=True)
+		transfersData = transfersData.append({'Player_Id': playerId, 'Name': name, 'From': teamLeft[i].text, 'To': teamJoined[i].text, 'Fee': fees[i].text, 'Market Value': markVals[i].text, 'Season': transferSeasons[i].text, 'Date': transferDates[i].text}, ignore_index=True)
 	
-	transfersData.to_csv('Transfers.csv', mode='a', header=False)
+	transfersData.to_csv('./Scrapped_Data/Transfers.csv', mode='a', header=False)
 
 	driver.find_element_by_xpath("//*[(@id = 'profile')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'megamenu', ' ' ))]").click()
 
@@ -129,9 +129,9 @@ def PlayerPage(link):
 
 	time.sleep(3)
 
-	def getGkInternStats():
+	def getGkInternStats(playerId):
 		
-		statsData = pd.DataFrame(columns=['Name', 'Position', 'Team', 'Season', 'Competition', 'Attribute', 'Value'])
+		statsData = pd.DataFrame(columns=['Player_Id','Name', 'Position', 'Team', 'Season', 'Competition', 'Attribute', 'Value'])
 
 		attributes = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-minuten-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-ohnegegentor-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-gegentor-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-rotekarte-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-gelbrotekarte-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-gelbekarte-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-auswechslungen-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-einwechslungen-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-eigentor-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-tor-table-header', ' ' ))] | //*[(@id = 'yw1_c6')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'sort-link', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-einsaetze-table-header', ' ' ))] | //*[(@id = 'yw1_c4')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'sort-link', ' ' ))]")
 		competitions = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'no-border-links', ' ' ))]//a")
@@ -194,13 +194,14 @@ def PlayerPage(link):
 					valToApp = value[i].text
 				except TypeError:
 					valToApp = '-'
-				statsData = statsData.append({'Name': name, 'Position': pos, 'Team': teamToApp, 'Season': seasonToApp, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
+				statsData = statsData.append({'Player_Id': playerId, 'Name': name, 'Position': pos, 'Team': teamToApp, 'Season': seasonToApp, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
 
-		statsData.to_csv('stats.csv',mode='a', header = False)
+		statsData.to_csv('./Scrapped_Data/stats.csv',mode='a', header = False)
+		driver.find_element_by_xpath("//*[(@id = 'profile')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'megamenu', ' ' ))]").click()
 
-	def getGkNatStats():
+	def getGkNatStats(playerId):
 
-		statsData = pd.DataFrame(columns=['Name', 'Position', 'Competition', 'Attribute', 'Value'])
+		statsData = pd.DataFrame(columns=['Player_Id', 'Name', 'Position', 'Competition', 'Attribute', 'Value'])
 
 		attributes = driver.find_elements_by_xpath("//*[(@id = 'yw1')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icons_sprite', ' ' ))]")
 		competitions = driver.find_elements_by_xpath("//*[(@id = 'yw1')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'no-border-links', ' ' ))]//a")
@@ -250,13 +251,14 @@ def PlayerPage(link):
 					valToApp = value[i].text
 				except TypeError:
 					valToApp = '-'
-				statsData = statsData.append({'Name': name, 'Position': pos, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
+				statsData = statsData.append({'Player_Id': playerId, 'Name': name, 'Position': pos, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
 
-		statsData.to_csv('natstats.csv', mode='a', header=False)
+		driver.find_element_by_xpath("//*[(@id = 'profile')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'megamenu', ' ' ))]").click()
+		statsData.to_csv('./Scrapped_Data/natstats.csv', mode='a', header=False)
 
-	def getInternStats():
+	def getInternStats(playerId):
 
-		statsData = pd.DataFrame(columns=['Name', 'Position', 'Team', 'Season', 'Competition', 'Attribute', 'Value'])
+		statsData = pd.DataFrame(columns=['Player_Id', 'Name', 'Position', 'Team', 'Season', 'Competition', 'Attribute', 'Value'])
 
 		attributes = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-minuten-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-minutenprotor-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-elfmeter-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-rotekarte-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-gelbrotekarte-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-gelbekarte-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-auswechslungen-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-einwechslungen-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-eigentor-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-einsaetze-table-header', ' ' ))] | //*[(@id = 'yw1_c4')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'sort-link', ' ' ))] | //*[(@id = 'yw1_c6')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'sort-link', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-vorlage-table-header', ' ' ))] | //*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icon-tor-table-header', ' ' ))]")
 		competitions = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'no-border-links', ' ' ))]//a")
@@ -321,14 +323,14 @@ def PlayerPage(link):
 				try:
 					valToApp = value[i].text
 				except TypeError:
-					velToApp = '-'
-				statsData = statsData.append({'Name': name, 'Position': pos, 'Team': teamToApp, 'Season': seasonToApp, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
+					valToApp = '-'
+				statsData = statsData.append({'Player_Id': playerId, 'Name': name, 'Position': pos, 'Team': teamToApp, 'Season': seasonToApp, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
 
-		statsData.to_csv('stats.csv', mode='a', header=False)
+		statsData.to_csv('./Scrapped_Data/stats.csv', mode='a', header=False)
 
-	def getNatStats():
+	def getNatStats(playerId):
 
-		statsData = pd.DataFrame(columns=['Name', 'Position', 'Competition', 'Attribute', 'Value'])
+		statsData = pd.DataFrame(columns=['Player_Id','Name', 'Position', 'Competition', 'Attribute', 'Value'])
 
 		attributes = driver.find_elements_by_xpath("//*[(@id = 'yw1')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'icons_sprite', ' ' ))]")
 		competitions = driver.find_elements_by_xpath("//*[(@id = 'yw1')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'no-border-links', ' ' ))]//a")
@@ -383,18 +385,17 @@ def PlayerPage(link):
 				except TypeError:
 					valToApp = '-'
 
-				statsData = statsData.append({'Name': name, 'Position': pos, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
+				statsData = statsData.append({'Player_Id': playerId, 'Name': name, 'Position': pos, 'Competition': compToApp, 'Attribute': att, 'Value': valToApp}, ignore_index=True)
 
-		statsData.to_csv('natstats.csv', mode='a', header=False)
-
+		statsData.to_csv('./Scrapped_Data/natstats.csv', mode='a', header=False)
 		driver.find_element_by_xpath("//*[(@id = 'profile')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'megamenu', ' ' ))]").click()
 
 		time.sleep(2)
 
 	if(pos == 'Goalkeeper'):
-		getGkInternStats()
+		getGkInternStats(playerId)
 	else:
-		getInternStats()
+		getInternStats(playerId)
 
 	try:
 		driver.find_element_by_xpath("//*[(@id = 'national-team')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'megamenu', ' ' ))]").click()
@@ -403,22 +404,21 @@ def PlayerPage(link):
 		time.sleep(2)
 
 		if(pos == 'Goalkeeper'):
-			getGkNatStats()
+			getGkNatStats(playerId)
 		else:
-			getNatStats()
-
-	except NoSuchElementException as exception:
+			getNatStats(playerId)
+	except:
 		driver.find_element_by_xpath("//*[(@id = 'profile')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'megamenu', ' ' ))]").click()
-
+	time.sleep(3)
 	try:
 		instaLink = driver.find_element_by_xpath("//*[@title='Instagram']").get_attribute("href")
 		followers = getFollowers(instaLink).text
 	except:
 		followers = 'no info'
 
-	playersData = playersData.append({'Name': name, 'Team': team, 'Nationality': nat, 'Date of Birth': dob, 'Height': hgt, 'Strong Foot': foot, 'Position': pos, 'Joined': joined, 'Contract Expires': until, 'Followers': followers}, ignore_index = True)
+	playersData = playersData.append({'Id': playerId,'Name': name, 'Team': team, 'Nationality': nat, 'Date of Birth': dob, 'Height': hgt, 'Strong Foot': foot, 'Position': pos, 'Joined': joined, 'Contract Expires': until, 'Followers': followers}, ignore_index = True)
 
-	playersData.to_csv('Players.csv', mode='a', header=False)
+	playersData.to_csv('./Scrapped_Data/Players.csv', mode='a', header=False)
 
 
 	time.sleep(5)
@@ -439,9 +439,9 @@ def PlayerPage(link):
 
 #for teamLink in teamLinks:
 #	TeamPage(teamLink)
-
-for row in range(numStopped - 2, len(playerLinksData['Name'])):
+# numStopped = 2
+for row in range(0, len(playerLinksData['Name'])):
 	link = playerLinksData['Player_url'][row]
-	PlayerPage(link)
+	PlayerPage(link,row)
 
 driver.quit()
