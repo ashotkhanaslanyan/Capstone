@@ -6,11 +6,11 @@ driver = webdriver.Firefox()
 MVCsvHead = pd.DataFrame(columns = ['Name', 'Club', 'League', 'Season', 'Market Value'])
 MVCsvHead.to_csv('markval.csv', mode='a')
 
-driver.get("https://www.transfermarkt.com/1-bundesliga/startseite/wettbewerb/L1")
+#driver.get("https://www.transfermarkt.com/1-bundesliga/startseite/wettbewerb/L1")
 
-allTeams = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'hide-for-pad', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'tooltipstered', ' ' ))]")
+#allTeams = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'hide-for-pad', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'tooltipstered', ' ' ))]")
 
-teamLinks = []
+teamLinksData = pd.read_csv('Prerequisit Data/teamlinks.csv')
 
 def TeamPage(link):
 	
@@ -39,8 +39,9 @@ def TeamPage(link):
 
 		markVal.to_csv('markval.csv', mode='a', header=False)	
 
-for team in allTeams:
-	teamLinks.append(team.get_attribute("href"))
+#for team in allTeams:
+#	teamLinks.append(team.get_attribute("href"))
 
-for teamLink in teamLinks:
-	TeamPage(teamLink)
+for row in range(numStopped - 2, len(teamLinksData['Team_name'])):
+	link = sofifaData['Team_url'][row]
+	TeamPage(link)

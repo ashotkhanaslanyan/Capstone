@@ -25,14 +25,14 @@ NatCsvHead.to_csv('natstats.csv', mode='a')
 opts = Options()
 opts.headless = True
 
-driver = webdriver.Firefox(options = opts)
+driver = webdriver.Firefox()
 
 driver.get("https://www.transfermarkt.com/1-bundesliga/startseite/wettbewerb/L1")
 
 allTeams = driver.find_elements_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'hide-for-pad', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'tooltipstered', ' ' ))]")
 
-teamLinks = []
-playerLinks = []
+teamLinks = pd.read_csv('Prerequisit Data/teamlinks.csv')
+playerLinksData = pd.read_csv('Prerequisit Data/playerlinks.csv')
 
 def PlayerPage(link):
 	
@@ -423,24 +423,25 @@ def PlayerPage(link):
 
 	time.sleep(5)
 
-def TeamPage(link):
+#def TeamPage(link):
 	
-	driver.get(link)
+#	driver.get(link)
 	
-	teamPlayers = driver.find_elements_by_xpath("//*[(@id = 'yw1')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'tooltipstered', ' ' ))]")
-	del teamPlayers[::2]
+#	teamPlayers = driver.find_elements_by_xpath("//*[(@id = 'yw1')]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'tooltipstered', ' ' ))]")
+#	del teamPlayers[::2]
 	
-	for player in teamPlayers:
-		playerLinks.append(player.get_attribute("href"))
+#	for player in teamPlayers:
+#		playerLinks.append(player.get_attribute("href"))
 
 
-for team in allTeams:
-	teamLinks.append(team.get_attribute("href"))
+#for team in allTeams:
+#	teamLinks.append(team.get_attribute("href"))
 
-for teamLink in teamLinks:
-	TeamPage(teamLink)
+#for teamLink in teamLinks:
+#	TeamPage(teamLink)
 
-for playerLink in playerLinks:
-	PlayerPage(playerLink)
+for row in range(numStopped - 2, len(playerLinksData['Name'])):
+	link = playerLinksData['Player_url'][row]
+	PlayerPage(link)
 
 driver.quit()
