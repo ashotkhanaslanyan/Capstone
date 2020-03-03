@@ -25,7 +25,7 @@ NatCsvHead.to_csv('./Scrapped_Data/natstats.csv', mode='a')
 opts = Options()
 opts.headless = True
 
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(options= opts)
 
 driver.get("https://www.transfermarkt.com/1-bundesliga/startseite/wettbewerb/L1")
 
@@ -440,7 +440,7 @@ def PlayerPage(link, playerId):
 #for teamLink in teamLinks:
 #	TeamPage(teamLink)
 # numStopped = 2
-for row in range(0, len(playerLinksData['Name'])):
+for row in range(20, len(playerLinksData['Name'])):
 	link = playerLinksData['Player_url'][row]
 	PlayerPage(link,row)
 
