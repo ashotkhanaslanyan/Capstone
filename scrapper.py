@@ -106,11 +106,16 @@ def PlayerPage(link, playerId):
 
 	time.sleep(3)
 
-	driver.find_element_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'leistungsdatenContent', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'swiper-slide-active', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'button', ' ' ))]").click()
-
+	try:
+		driver.find_element_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'leistungsdatenContent', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'swiper-slide-active', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'button', ' ' ))]").click()
+	except:
+		print("the element was not found, trying another way")
+		newLink = link.replace("profil","leistungsdatendetails")
+		driver.get(newLink)		
+	
 	time.sleep(2)
 
-	filtersDiv = driver.find_element_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'large-8', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'content', ' ' ))]")
+	# filtersDiv = driver.find_element_by_xpath("//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'large-8', ' ' ))]//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'content', ' ' ))]")
 	filters = driver.find_elements_by_tag_name('select')
 	filters = filters[4:]
 
@@ -439,8 +444,10 @@ def PlayerPage(link, playerId):
 
 #for teamLink in teamLinks:
 #	TeamPage(teamLink)
-# numStopped = 2
-for row in range(20, len(playerLinksData['Name'])):
+numStopped = 125
+
+
+for row in range(numStopped-2, len(playerLinksData['Name'])):
 	link = playerLinksData['Player_url'][row]
 	PlayerPage(link,row)
 
