@@ -47,7 +47,6 @@ def get_transfers(link, id, driver):
                 "Season": cols[0].get_text(),
                 "Date": cols[1].get_text()
             }
-            print('data', data)
             global transfers
             transfers = transfers.append(data, ignore_index=True)
     except Exception as e:

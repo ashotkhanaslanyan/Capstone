@@ -29,18 +29,31 @@ columns=['Id','Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong 
 players_df = create_or_open(file_dest = "./Scrapped_Data/Players.csv", columns = columns)
 player_links_data = pd.read_csv('Prerequisit Data/playerlinks.csv')
 
-for row in range(465, 475):
+columns = ['Player_Id', 'Name', 'Team', 'Season', 'Competition', 'Attribute','value']
+stats = create_or_open("./Scrapped_Data/Stats_Long.csv", columns)
+
+columns = ["Player_Id","Name","National Team","Competition"]
+nat_stats = create_or_open("./Scrapped_Data/Nat_Stats.csv", columns)
+
+for row in range(0, 5):
     player = None
     try:
         link = player_links_data['Player_url'][row]
         player = pl.Player(id = row, link = link, driver = driver)
-        data = player.data_to_append()
+        data = player.data
         players_df = players_df.append(data, ignore_index=True)
+        stats = stats.append(player.stats_df)
+        nat_stats = nat_stats.append(player.nat_stats)
     except Exception as e:
         print("exception !!! writting to csv stopped at " +  str(players_df.tail(1)["Id"]))
         print("The exception message", str(e))
         players_df.to_csv("./Scrapped_Data/Players.csv")
+        stats.to_csv("./Scrapped_Data/Stats.csv")
+        nat_stats.to_csv("./Scrapped_Data/Nat_Stats.csv")
         break
     del player
+
 players_df.to_csv("./Scrapped_Data/Players.csv")
+stats.to_csv("./Scrapped_Data/Stats.csv")
+nat_stats.to_csv("./Scrapped_Data/Nat_Stats.csv")
 driver.quit()
