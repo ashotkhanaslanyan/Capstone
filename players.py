@@ -84,7 +84,7 @@ class Player:
             insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
             if not(insta_link is None):
                 self.driver.get(insta_link)
-                followers = self.driver.find_element_by_xpath(followers_xpath).text
+                followers = self.driver.find_element_by_xpath(followers_xpath).get_attribute("title")
                 self.driver.get(self.link)
         except:
             print("no info about followers")
