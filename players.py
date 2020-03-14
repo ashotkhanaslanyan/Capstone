@@ -26,6 +26,7 @@ class Player:
         self.nat_stats = None
         self.position = None
         self.tm_Id = None
+        print(self.id)
         self.get_tm_id()
         self.get_info()
         self.get_followers()
@@ -41,7 +42,6 @@ class Player:
     def get_tm_id(self):
         digits = re.findall(r"\d", self.link)
         self.tm_Id = functools.reduce(lambda a,b : a+b,digits)
-        print(self.tm_Id)
 
     def get_info(self):
         print("trying to get information about the player")

@@ -28,10 +28,10 @@ def start_scrapping(driver, start, end, players_df, stats_df, nat_stats_df, tran
             transfer_link = transfer_links[id]
             player = pl.Player(id = id, link = link, driver = driver)
             data = player.data
-            transfers = tf.get_transfers(link = transfer_link, id = id, driver = driver)
             players_df = players_df.append(data, ignore_index=True)
             stats_df = stats_df.append(player.stats_df)
             nat_stats_df = nat_stats_df.append(player.nat_stats)
+            transfers = tf.get_transfers(link = transfer_link, id = id, driver = driver)
             transfers_df = transfers_df.append(transfers)
         except Exception as e:
             print("exception writting to csv, players_df stopped at " +  str(players_df.tail(1)["Id"]))
@@ -69,6 +69,9 @@ player_links = pd.read_csv('Prerequisit Data/playerlinks.csv')['Player_url']
 transfer_links = pd.read_csv('Prerequisit Data/transferlinks.csv')['Player_url']
 team_links = pd.read_csv('Prerequisit Data/teamlinks.csv')['Team_url']
 
-start_scrapping(driver, 459, 472, players_df, stats_df, nat_stats_df, 
-transfers_df = transfers_df, player_links = player_links, transfer_links = transfer_links)
+
+start = 0; end = 10
+
+start_scrapping(driver, start = start, end = end, players_df = players_df, stats_df = stats_df, 
+nat_stats_df = nat_stats_df, transfers_df = transfers_df, player_links = player_links, transfer_links = transfer_links)
 
