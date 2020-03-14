@@ -30,6 +30,9 @@ def start_scrapping(driver, start, end, players_df, stats_df, nat_stats_df, tran
             stats_df = stats_df.append(player.stats_df)
             nat_stats_df = nat_stats_df.append(player.nat_stats)
             transfers_df = transfers_df.append(player.transfers_df)
+            players_df.set_index("tm_Id", drop = False, inplace = True)
+            stats_df.set_index("tm_Id", drop = False, inplace = True)
+            nat_stats_df.set_index("tm_Id", drop = False, inplace = True)
         except Exception as e:
             print("exception writting to csv, players_df stopped at " +  str(players_df.tail(1)["Id"]))
             print("exception writting to csv, stats stopped at " +  str(stats_df.tail(1)["Player_Id"]))

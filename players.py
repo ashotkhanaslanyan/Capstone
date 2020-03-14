@@ -58,6 +58,7 @@ class Player:
                     "Date": cols[1].get_text()
                 }
                 transfers = transfers.append(data, ignore_index=True)
+                transfers.set_index("tm_Id", inplace=True, drop=False)
         except Exception as e:
             print(str(e))
         self.transfers_df = transfers

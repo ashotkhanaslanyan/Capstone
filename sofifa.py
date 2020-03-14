@@ -14,6 +14,7 @@ ids = players_20["sofifa_id"]
 names = players_20["short_name"]
 
 def get_injuries_trophies(link, driver, sofifa_id, name):
+    injuries = None; trophies = None
     try:
         driver.get(link)
         bs_obj = BeautifulSoup(driver.page_source, 'html.parser')
@@ -23,6 +24,8 @@ def get_injuries_trophies(link, driver, sofifa_id, name):
         injury_df = pd.read_html(str(table_1))[0]
         trophies = hp.clean_trophies(trophy_df, sofifa_id=sofifa_id, name = name)
         injuries = hp.clean_injuries(injury_df, sofifa_id=sofifa_id, name = name)
+        injuries.set_index("sofifa_id", drop = False, inplace = True)
+        trophies.set_index("sofifa_id", drop = False, inplace = True)
     except Exception as e:
         print(str(e))
     return  injuries,trophies

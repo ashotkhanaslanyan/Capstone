@@ -46,6 +46,7 @@ def scrap_mvs(link, driver, start=2005, end=2020):
             df.insert(3, "Season", mv_season)
             df.insert(5, "tm_Id", ids[::2])
             team_df = team_df.append(df)
+            team_df.set_index("tm_Id", drop = False, inplace = True)
     except Exception as e:
         print(str(e))
     return team_df
@@ -57,15 +58,12 @@ driver = webdriver.Firefox(options=opts)
 
 team_links = pd.read_csv("Prerequisit Data/teamlinks.csv")["Team_url"]
 
-start = 400
-end = 452
-df = pd.DataFrame(columns=['Name', 'Club', 'League',
-                           'Season', 'Market Value', "tm_Id"])
-
+start = 0
+end = 2
 for team in range(start, end):
     try:
         link = team_links[team]
-        mvs_df = scrap_mvs(link=link, driver=driver)
+        mvs_df = scrap_mvs(link=link, driver=driver, start = 2010, end = 2012)
         mvs = mvs.append(mvs_df)
     except Exception as e:
         print(str(e))
