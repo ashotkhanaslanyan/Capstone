@@ -11,25 +11,21 @@ import pandas as pd
 import time
 from bs4 import BeautifulSoup
 import requests
+import helpers as hp
 
 opts = Options()
 opts.headless = True
 driver = webdriver.Firefox(options= opts)
 
-def create_or_open(file_dest, columns):
-    data_frame = None
-    try:
-        data_frame = pd.read_csv(file_dest, index_col = 0)
-    except:
-        data_frame = pd.DataFrame(columns=columns)
-    return data_frame
 
 columns=['Player_Id', 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date']
-transfers = create_or_open("./Scrapped_Data/Transfers.csv", columns)
+transfers = hp.create_or_open("./Scrapped_Data/Transfers.csv", columns)
 transfers_links_data = pd.read_csv('Prerequisit Data/transferlinks.csv')
 
 
 def get_transfers(link, id, driver):
+    print("trying to get player's transfers")
+    transfers = pd.DataFrame(columns=['Player_Id', 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
     try:
         driver.get(link)
         bs_obj = BeautifulSoup(driver.page_source, 'html.parser')
@@ -47,10 +43,10 @@ def get_transfers(link, id, driver):
                 "Season": cols[0].get_text(),
                 "Date": cols[1].get_text()
             }
-            global transfers
             transfers = transfers.append(data, ignore_index=True)
     except Exception as e:
         print(str(e))
+    return transfers
 
 
 

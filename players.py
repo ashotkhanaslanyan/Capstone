@@ -11,6 +11,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import time
 import helpers as hp
+import functools
+import re
 
 class Player:
     def __init__(self, id, link, driver):
@@ -23,11 +25,23 @@ class Player:
         self.stats_df = None
         self.nat_stats = None
         self.position = None
+        self.tm_Id = None
+        self.get_tm_id()
         self.get_info()
         self.get_followers()
         self.data_to_append()
         self.get_player_stats()
         self.get_nat_stats()
+    
+    def go_detailed_page(self):
+        detailed = self.driver.find_elements_by_css_selector(".kartei-button-body")[1]
+        self.driver.execute_script("arguments[0].click();", detailed)
+        time.sleep(5)
+
+    def get_tm_id(self):
+        digits = re.findall(r"\d", self.link)
+        self.tm_Id = functools.reduce(lambda a,b : a+b,digits)
+        print(self.tm_Id)
 
     def get_info(self):
         print("trying to get information about the player")
@@ -73,6 +87,7 @@ class Player:
     def data_to_append(self):
         data = {
             'Id': self.id,
+            'tm_Id': self.tm_Id,
             'Name':  self.name, 
             'Team':  self.extract_cell("Current club:"), 
             'Nationality':  self.extract_cell("Citizenship:"), 
@@ -95,9 +110,7 @@ class Player:
         try:
             stats_link = self.link.replace("profil","leistungsdatendetails")
             self.driver.get(stats_link)
-            detailed = self.driver.find_elements_by_css_selector(".kartei-button-body")[1]
-            self.driver.execute_script("arguments[0].click();", detailed)
-            time.sleep(3)
+            self.go_detailed_page()
             get_name = lambda input: input.get_attribute('alt')
             teams = self.driver.find_elements_by_xpath(teams_xpath)
             teams = list(map(get_name, teams))
@@ -111,15 +124,18 @@ class Player:
                     "Substitutions off","Yellow Cards","Second yellow cards","Red cards",
                     "Goals conceded","Clean sheets","Minutes played"]
                 drop_indexes = [3,17]
+                drop_cols = ["Goals"]
             else:
                 columns = ["Season","Team","Competition","Squad",
                 "Appearances","PPG","Goals","Assists","Own goals","Substitutions on",
                 "Substitutions off","Yellow Cards","Second yellow cards","Red cards",
                 "Penalty goals","Minutes per goal","Minutes played"]
                 drop_indexes = [3,18]
-            id_vars = ["Player_Id","Name","Team","Season","Competition"]
-            df_long = hp.hp.clean_stats_frame(df = df, teams = teams, player_id = self.id,
-            player_name = self.name, columns = columns, drop_indexes = drop_indexes, id_vars = id_vars)
+                drop_cols = []
+            id_vars = ["Player_Id","tm_Id","Name","Team","Season","Competition"]
+            df_long = hp.clean_stats_frame(df = df, teams = teams, team_ind = 1, player_id = self.id,
+            player_name = self.name, columns = columns, drop_indexes = drop_indexes, 
+            drop_cols = drop_cols, id_vars = id_vars, tm_id = self.tm_Id)
         except Exception as e:
             print(str(e))
         self.stats_df = df_long
@@ -131,9 +147,7 @@ class Player:
         try:
             nat_link = self.link.replace("profil","nationalmannschaft")
             self.driver.get(nat_link)
-            detailed = self.driver.find_elements_by_css_selector(".kartei-button-body")[1]
-            self.driver.execute_script("arguments[0].click();", detailed)
-            time.sleep(3)
+            self.go_detailed_page()
             nat_team = self.driver.find_element_by_xpath(nat_team_xpath).text
             bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
             table = bs_obj.find_all('table')[2]
@@ -145,16 +159,18 @@ class Player:
                         "Substitutions off","Yellow Cards","Second yellow cards","Red cards",
                         "Goals conceded","Clean sheets","Minutes played"]
                 drop_indexes = [13]
+                drop_cols = ["Goals"]
             else:
                 drop_indexes = [14]
                 columns = ["National Team","Competition","Squad",
                         "Goals","Assists","Own goals","Substitutions on",
                         "Substitutions off","Yellow Cards","Second yellow cards","Red cards",
                         "Penalty goals","Minutes per goal","Minutes played"]
-
-            id_vars = ["Player_Id","Name","National Team","Competition"]
-            df_long = hp.clean_stats_frame(df = df, teams = nat_team, player_id = self.id,
-            player_name = self.name, columns = columns, drop_indexes = drop_indexes, id_vars = id_vars)
+                drop_cols = []
+            id_vars = ["Player_Id","tm_Id","Name","National Team","Competition"]
+            df_long = hp.clean_stats_frame(df = df, teams = nat_team, team_ind = 0, player_id = self.id,
+            player_name = self.name, columns = columns, drop_indexes = drop_indexes,
+            drop_cols = drop_cols, id_vars = id_vars, tm_id = self.tm_Id)
         except Exception as e:
             print(str(e))
         self.nat_stats = df_long

@@ -12,48 +12,63 @@ from csv import writer
 import time
 import csv
 import players as pl
+import helpers as hp
+import transfers as tf
 
 opts = Options()
-opts.headless = True
+opts.headless = False
 driver = webdriver.Firefox(options= opts)
 
-def create_or_open(file_dest, columns):
-    data_frame = None
-    try:
-        data_frame = pd.read_csv(file_dest, index_col = 0)
-    except:
-        data_frame = pd.DataFrame(columns=columns)
-    return data_frame
 
-columns=['Id','Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers']
-players_df = create_or_open(file_dest = "./Scrapped_Data/Players.csv", columns = columns)
-player_links_data = pd.read_csv('Prerequisit Data/playerlinks.csv')
+def start_scrapping(driver, start, end, players_df, stats_df, nat_stats_df, transfers_df, player_links, transfer_links):
+    for id in range(start, end):
+        player = None
+        try:
+            link = player_links[id]
+            transfer_link = transfer_links[id]
+            player = pl.Player(id = id, link = link, driver = driver)
+            data = player.data
+            transfers = tf.get_transfers(link = transfer_link, id = id, driver = driver)
+            players_df = players_df.append(data, ignore_index=True)
+            stats_df = stats_df.append(player.stats_df)
+            nat_stats_df = nat_stats_df.append(player.nat_stats)
+            transfers_df = transfers_df.append(transfers)
+        except Exception as e:
+            print("exception writting to csv, players_df stopped at " +  str(players_df.tail(1)["Id"]))
+            print("exception writting to csv, stats stopped at " +  str(stats_df.tail(1)["Player_Id"]))
+            print("exception writting to csv, nat_stats stopped at " +  str(nat_stats_df.tail(1)["Player_Id"]))
+            print("exception writting to csv, trasnfers stopped at " +  str(transfers_df.tail(1)["Player_Id"]))
+            print("The exception message", str(e))
+            players_df.to_csv("./Scrapped_Data/Players.csv")
+            stats_df.to_csv("./Scrapped_Data/stats.csv")
+            nat_stats_df.to_csv("./Scrapped_Data/natstats.csv")
+            transfers_df.to_csv("./Scrapped_Data/Transfers.csv")
+            break
+        del player
+    driver.quit()
+    print("Finished scrapping")
+    players_df.to_csv("./Scrapped_Data/Players.csv")
+    stats_df.to_csv("./Scrapped_Data/stats.csv")
+    nat_stats_df.to_csv("./Scrapped_Data/natstats.csv")
+    transfers_df.to_csv("./Scrapped_Data/Transfers.csv")
 
-columns = ['Player_Id', 'Name', 'Team', 'Season', 'Competition', 'Attribute','value']
-stats = create_or_open("./Scrapped_Data/Stats_Long.csv", columns)
+info_cols=['Id','tm_Id','Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers']
+players_df = hp.create_or_open(file_dest = "./Scrapped_Data/Players.csv", columns = info_cols)
 
-columns = ["Player_Id","Name","National Team","Competition"]
-nat_stats = create_or_open("./Scrapped_Data/Nat_Stats.csv", columns)
+stats_cols = ['Player_Id', 'tm_Id', 'Name', 'Team', 'Season', 'Competition', 'Attribute','value']
+stats_df = hp.create_or_open("./Scrapped_Data/Stats.csv", columns = stats_cols)
 
-for row in range(0, 5):
-    player = None
-    try:
-        link = player_links_data['Player_url'][row]
-        player = pl.Player(id = row, link = link, driver = driver)
-        data = player.data
-        players_df = players_df.append(data, ignore_index=True)
-        stats = stats.append(player.stats_df)
-        nat_stats = nat_stats.append(player.nat_stats)
-    except Exception as e:
-        print("exception !!! writting to csv stopped at " +  str(players_df.tail(1)["Id"]))
-        print("The exception message", str(e))
-        players_df.to_csv("./Scrapped_Data/Players.csv")
-        stats.to_csv("./Scrapped_Data/Stats.csv")
-        nat_stats.to_csv("./Scrapped_Data/Nat_Stats.csv")
-        break
-    del player
+nat_cols = ["Player_Id", "tm_Id", "Name","National Team","Competition"]
+nat_stats_df = hp.create_or_open("./Scrapped_Data/natstats.csv", columns = nat_cols) 
 
-players_df.to_csv("./Scrapped_Data/Players.csv")
-stats.to_csv("./Scrapped_Data/Stats.csv")
-nat_stats.to_csv("./Scrapped_Data/Nat_Stats.csv")
-driver.quit()
+tran_cols=['Player_Id', 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date']
+transfers_df = hp.create_or_open("./Scrapped_Data/Transfers.csv", columns = tran_cols)
+
+
+player_links = pd.read_csv('Prerequisit Data/playerlinks.csv')['Player_url']
+transfer_links = pd.read_csv('Prerequisit Data/transferlinks.csv')['Player_url']
+team_links = pd.read_csv('Prerequisit Data/teamlinks.csv')['Team_url']
+
+start_scrapping(driver, 459, 472, players_df, stats_df, nat_stats_df, 
+transfers_df = transfers_df, player_links = player_links, transfer_links = transfer_links)
+
