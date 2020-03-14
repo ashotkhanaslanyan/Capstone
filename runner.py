@@ -61,7 +61,7 @@ stats_df = hp.create_or_open("./Scrapped_Data/Stats.csv", columns = stats_cols)
 nat_cols = ["Player_Id", "tm_Id", "Name","National Team","Competition"]
 nat_stats_df = hp.create_or_open("./Scrapped_Data/natstats.csv", columns = nat_cols) 
 
-tran_cols=['Player_Id', 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date']
+tran_cols=['Player_Id', "tm_Id", 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date']
 transfers_df = hp.create_or_open("./Scrapped_Data/Transfers.csv", columns = tran_cols)
 
 
@@ -70,7 +70,7 @@ transfer_links = pd.read_csv('Prerequisit Data/transferlinks.csv')['Player_url']
 team_links = pd.read_csv('Prerequisit Data/teamlinks.csv')['Team_url']
 
 
-start = 0; end = 10
+start = 0; end = 3
 
 start_scrapping(driver, start = start, end = end, players_df = players_df, stats_df = stats_df, 
 nat_stats_df = nat_stats_df, transfers_df = transfers_df, player_links = player_links, transfer_links = transfer_links)

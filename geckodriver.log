@@ -345,3 +345,140 @@ JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#
 JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
 JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
 1584201944463	Marionette	INFO	Stopped listening on port 50731
+1584202278681	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile1Pk3ts"
+*** You are running in headless mode.
+1584202279078	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584202279338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584202279338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584202279338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584202279338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584202280845	Marionette	INFO	Listening on port 51088
+1584202280929	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 109: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1584202298156	Marionette	INFO	Stopped listening on port 51088
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584202303902	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileshQF4i"
+1584202304431	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584202304678	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584202304678	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584202304678	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584202304678	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584202306222	Marionette	INFO	Listening on port 51211
+1584202306250	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1584202377083	Marionette	INFO	Stopped listening on port 51211
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584203662347	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileFR87Gz"
+1584203663149	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584203663427	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584203663428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584203663428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584203663428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584203665403	Marionette	INFO	Listening on port 51728
+1584203665440	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584203698341	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilehC5z9m"
+1584203698841	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584203699239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584203699239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584203699239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584203699239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584203701026	Marionette	INFO	Stopped listening on port 51728
+1584203701549	Marionette	INFO	Listening on port 51809
+1584203701704	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tags.bkrtx.com/js/bk-coretag.js, line 84: NS_ERROR_UNEXPECTED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=2DMU3IeEtrCOtnitPBEFVd9ximMZPa-oNoM_ZWqhhPmNqrL6EJJyIbiHWBicLYjl&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584203782853	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilelENHIW"
+1584203783395	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584203783649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584203783649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584203783649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584203783649	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584203785232	Marionette	INFO	Listening on port 52036
+1584203785319	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tags.bkrtx.com/js/bk-coretag.js, line 84: NS_ERROR_UNEXPECTED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://player.daznservices.com/spieler/releases/1.51.9/ng-spieler.js, line 4: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 109: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 109: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=WIqU8RHH7i4Zub0MMQwc2Ll2d1hHOOoWBbMWDsfvRnlXQ_-xngO-n1LDpRHMn2cf&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+1584203859016	Marionette	INFO	Stopped listening on port 52036

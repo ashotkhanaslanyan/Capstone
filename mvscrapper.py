@@ -47,8 +47,23 @@ def scrap_mvs(link, driver, start = 2005, end = 2020):
     return team_df
 
 opts = Options()
-opts.headless = False
+opts.headless = True
 driver = webdriver.Firefox(options= opts)
-scrap_mvs(link="https://www.transfermarkt.com/fc-bayern-munchen/startseite/verein/27/saison_id/2019", driver = driver)
-mvs.to_csv("./Scrapped_Data/markval.csv")
+
+team_links = pd.read_csv("Prerequisit Data/teamlinks.csv")["Team_url"]
+
+start = 0; end = 1
+df = pd.DataFrame(columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
+
+for team in range(start, end):
+    try:
+        link = team_links[team]
+        mvs_df = scrap_mvs(link = link, driver = driver)
+    except Exception as e:
+        print(str(e))
+        print("writting to csv stopped at", str(mvs.tail(1)["tm_Id"]))
+        mvs_df.to_csv("Scrapped_Data/marval.csv")
+        driver.quit()
+
 driver.quit()
+mvs_df.to_csv("Scrapped_Data/marval.csv")

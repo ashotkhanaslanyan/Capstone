@@ -12,6 +12,8 @@ import time
 from bs4 import BeautifulSoup
 import requests
 import helpers as hp
+import re
+import functools
 
 opts = Options()
 opts.headless = True
@@ -25,16 +27,19 @@ transfers_links_data = pd.read_csv('Prerequisit Data/transferlinks.csv')
 
 def get_transfers(link, id, driver):
     print("trying to get player's transfers")
-    transfers = pd.DataFrame(columns=['Player_Id', 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
+    transfers = pd.DataFrame(columns=['Player_Id', "tm_Id", 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
     try:
         driver.get(link)
         bs_obj = BeautifulSoup(driver.page_source, 'html.parser')
         rows = bs_obj.find_all('table')[0].find('tbody').find_all('tr',{"class":"zeile-transfer"})
         name = bs_obj.find_all('h1')[0].get_text()
+        digits = re.findall(r"\d", link)
+        tm_Id = functools.reduce(lambda a,b : a+b,digits)
         for row in rows:
             cols = row.find_all('td')
             data = {
                 "Player_Id": id,
+                "tm_Id": tm_Id,
                 "Name": name,
                 "From": cols[5].get_text(),
                 "To": cols[9].get_text(),
