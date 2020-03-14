@@ -1,5 +1,37 @@
 import pandas as pd
 
+def clean_trophies(df, sofifa_id, name):
+    df.fillna(method='ffill', inplace=True)
+    df.columns = ["Competition", "Trophy", "Quantity", "Season"]
+    df.insert(0, "sofifa_id", sofifa_id)
+    df.insert(1, "Name", name)
+    df = df[(df["Competition"] != "Club International") & (df["Competition"] != "Club Domestic") & (
+            df["Competition"] != "National")]
+    get_quantity = lambda x: int(x.replace("x", ""))
+    df.loc[:,"Quantity"] = list(map(get_quantity, df.loc[:,"Quantity"]))
+    once = df[df.Quantity == 1]
+    multiple = df[df.Quantity > 1]
+    for row in range(0, multiple.shape[0]):
+        seasons = multiple.iloc[row, 5].split(",")
+        competiton = multiple.iloc[row, 2]
+        trophy = multiple.iloc[row, 3]
+        # sofifa_id = multiple.iloc[row, 0]
+        # name = multiple.iloc[row, 1]
+        for season in seasons:
+            multiple = multiple.append({"sofifa_id": sofifa_id, "Name": name,
+                                        "Competition": competiton, "Trophy": trophy, "Quantity": 1, "Season": season},
+                                       ignore_index=True)
+    multiple = multiple[multiple.Quantity == 1]
+    final = once.append(multiple, ignore_index=True)
+    final = final.drop(["Quantity"], axis=1)
+    return final
+
+def clean_injuries(df, sofifa_id, name):
+    df.columns = ["Name", "Reason", "Start Date", "End Date"]
+    df["Name"] = name
+    df.insert(0, "sofifa_id", sofifa_id)
+    return df
+
 def clean_stats_frame(df,teams,player_id, team_ind ,player_name, columns, drop_indexes, drop_cols, id_vars, tm_id): 
     df.drop(df.tail(1).index,inplace=True)
     df.iloc[:,team_ind] = teams
