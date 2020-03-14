@@ -48,6 +48,7 @@ def get_transfers(link, id, driver):
                 "Season": cols[0].get_text(),
                 "Date": cols[1].get_text()
             }
+            print(data)
             transfers = transfers.append(data, ignore_index=True)
     except Exception as e:
         print(str(e))
@@ -55,15 +56,15 @@ def get_transfers(link, id, driver):
 
 
 
-for row in range(485, 496):
-    try:
-        link = transfers_links_data['Player_url'][row]
-        get_transfers(link = link, id = row, driver = driver)
-    except Exception as e:
-        print("exception !!! writting to csv stopped at " +  str(transfers.tail(1)["Player_Id"]))
-        print("The exception message", str(e))
-        transfers.to_csv("./Scrapped_Data/Transfers.csv")
-        break
+# for row in range(485, 496):
+#     try:
+#         link = transfers_links_data['Player_url'][row]
+#         get_transfers(link = link, id = row, driver = driver)
+#     except Exception as e:
+#         print("exception !!! writting to csv stopped at " +  str(transfers.tail(1)["Player_Id"]))
+#         print("The exception message", str(e))
+#         transfers.to_csv("./Scrapped_Data/Transfers.csv")
+#         break
 
 transfers.to_csv("./Scrapped_Data/Transfers.csv")
 driver.quit()

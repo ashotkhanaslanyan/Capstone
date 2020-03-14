@@ -26,6 +26,7 @@ class Player:
         self.nat_stats = None
         self.position = None
         self.tm_Id = None
+        self.transfers_df = None
         print(self.id)
         self.get_tm_id()
         self.get_info()
@@ -33,7 +34,34 @@ class Player:
         self.data_to_append()
         self.get_player_stats()
         self.get_nat_stats()
+        self.get_transfers()
     
+    def get_transfers(self):
+        print("trying to get player's transfers")
+        transfers = pd.DataFrame(columns=['Player_Id', "tm_Id", 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
+        try:
+            link = self.link.replace("profil","transfers")
+            self.driver.get(link)
+            bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
+            rows = bs_obj.find_all('table')[0].find('tbody').find_all('tr',{"class":"zeile-transfer"})
+            for row in rows:
+                cols = row.find_all('td')
+                data = {
+                    "Player_Id": self.id,
+                    "tm_Id": self.tm_Id,
+                    "Name": self.name,
+                    "From": cols[5].get_text(),
+                    "To": cols[9].get_text(),
+                    "Fee": cols[11].get_text(),
+                    "Market Value": cols[10].get_text(),
+                    "Season": cols[0].get_text(),
+                    "Date": cols[1].get_text()
+                }
+                transfers = transfers.append(data, ignore_index=True)
+        except Exception as e:
+            print(str(e))
+        self.transfers_df = transfers
+
     def go_detailed_page(self):
         detailed = self.driver.find_elements_by_css_selector(".kartei-button-body")[1]
         self.driver.execute_script("arguments[0].click();", detailed)

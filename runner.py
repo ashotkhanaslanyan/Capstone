@@ -13,10 +13,9 @@ import time
 import csv
 import players as pl
 import helpers as hp
-import transfers as tf
 
 opts = Options()
-opts.headless = False
+opts.headless = True
 driver = webdriver.Firefox(options= opts)
 
 
@@ -25,14 +24,12 @@ def start_scrapping(driver, start, end, players_df, stats_df, nat_stats_df, tran
         player = None
         try:
             link = player_links[id]
-            transfer_link = transfer_links[id]
             player = pl.Player(id = id, link = link, driver = driver)
             data = player.data
             players_df = players_df.append(data, ignore_index=True)
             stats_df = stats_df.append(player.stats_df)
             nat_stats_df = nat_stats_df.append(player.nat_stats)
-            transfers = tf.get_transfers(link = transfer_link, id = id, driver = driver)
-            transfers_df = transfers_df.append(transfers)
+            transfers_df = transfers_df.append(player.transfers_df)
         except Exception as e:
             print("exception writting to csv, players_df stopped at " +  str(players_df.tail(1)["Id"]))
             print("exception writting to csv, stats stopped at " +  str(stats_df.tail(1)["Player_Id"]))
