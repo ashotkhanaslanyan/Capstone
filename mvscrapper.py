@@ -57,7 +57,7 @@ team_links = pd.read_csv("Prerequisit Data/teamlinks.csv")["Team_url"]
 
 start = 4
 end = 8
-if(not(hp.check_if_exists("Scrapped_Data/marvkal.csv"))):
+if(not(hp.check_if_exists("Scrapped_Data/markval.csv"))):
     hp.create_empty_df("Scrapped_Data/markval.csv", columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
 for team in range(start, end):
     try:
