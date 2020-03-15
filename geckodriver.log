@@ -649,3 +649,914 @@ JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#
 JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
 JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
 1584227491172	Marionette	INFO	Stopped listening on port 63811
+1584263854539	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileWOXo0A"
+*** You are running in headless mode.
+1584263855339	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584263855676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584263855676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584263855676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584263855676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584263859808	Marionette	INFO	Listening on port 64387
+1584263859847	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=i0wrpAoomKPG-KLE4ap9XN0feOO7rMm-c_WB2FxeZzzHQhD7Mevrn1eKv91Hl0nq&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=i0wrpAoomKPG-KLE4ap9XN0feOO7rMm-c_WB2FxeZzzHQhD7Mevrn1eKv91Hl0nq&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=i0wrpAoomKPG-KLE4ap9XN0feOO7rMm-c_WB2FxeZzzHQhD7Mevrn1eKv91Hl0nq&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584263893407	Marionette	INFO	Stopped listening on port 64387
+1584263909396	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilefmsCge"
+*** You are running in headless mode.
+1584263909779	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584263910102	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584263910103	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584263910103	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584263910103	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584263911686	Marionette	INFO	Listening on port 64609
+1584263911758	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=umnoLcst3OJQDGN7FHZowcde7Dhu4HLttWZJ1Y2aEQd3HSLmELJFtMU1TlsgKuXn&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584263957336	Marionette	INFO	Stopped listening on port 64609
+1584264526555	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileGoOJbm"
+*** You are running in headless mode.
+1584264527023	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584264527299	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584264527299	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584264527299	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584264527299	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584264529092	Marionette	INFO	Listening on port 64886
+1584264529127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584264561765	Marionette	INFO	Stopped listening on port 64886
+1584264590458	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileocGpX2"
+*** You are running in headless mode.
+1584264590846	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584264591117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584264591117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584264591117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584264591117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584264592606	Marionette	INFO	Listening on port 65072
+1584264592690	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=XsLWfhSPSf7_NL4_PZ6mcP6sUvobuVZi2tW0zWKdJcxKzxZQXet0MunjvFVF76jN&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=XsLWfhSPSf7_NL4_PZ6mcP6sUvobuVZi2tW0zWKdJcxKzxZQXet0MunjvFVF76jN&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+1584264663429	Marionette	INFO	Stopped listening on port 65072
+Exiting due to channel error.
+1584264696167	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile9EtnxM"
+*** You are running in headless mode.
+1584264696555	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584264696839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584264696839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584264696839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584264696839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584264699317	Marionette	INFO	Listening on port 65333
+1584264699382	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6ChgH-8YQlTuZNlJCvatfrvwNR1O-00E4MBnY61oOOqZfAgtdzmoZrN3V2xxR8jJ&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6ChgH-8YQlTuZNlJCvatfrvwNR1O-00E4MBnY61oOOqZfAgtdzmoZrN3V2xxR8jJ&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 112: SecurityError: Permission denied to access property "frameElement" on cross-origin object
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 112: SecurityError: Permission denied to access property "frameElement" on cross-origin object
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 112: SecurityError: Permission denied to access property "frameElement" on cross-origin object
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 112: SecurityError: Permission denied to access property "frameElement" on cross-origin object
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584264766938	Marionette	INFO	Stopped listening on port 65333
+1584266032528	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilekkrb3Z"
+*** You are running in headless mode.
+1584266033126	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584266033407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584266033407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584266033408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584266033408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584266035335	Marionette	INFO	Listening on port 49263
+1584266035377	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=t4E9wjrG_svdgQFBuyKtXL6GscRhD3DnKyHxsQ5GNNQwjA1M7tt1dsgbp0tVGeA1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=t4E9wjrG_svdgQFBuyKtXL6GscRhD3DnKyHxsQ5GNNQwjA1M7tt1dsgbp0tVGeA1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1584266118858	Marionette	INFO	Stopped listening on port 49263
+1584266607209	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileCp16fp"
+*** You are running in headless mode.
+1584266607984	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584266608293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584266608293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584266608293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584266608293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584266610309	Marionette	INFO	Listening on port 49564
+1584266610448	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1584266780302	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile8hdmo9"
+*** You are running in headless mode.
+1584266780769	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584266781106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584266781106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584266781107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584266781107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584266783131	Marionette	INFO	Listening on port 49711
+1584266783167	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=kmK2cgqRoyTrcTEHm8l-_pE3zCjVA5zK-b0BerewbMwhKBMGJy8HhtiEcQpGiRu9&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 109: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://cdn.ampproject.org/rtv/012002251816300/v0/amp-analytics-0.1.js, line 109: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=kmK2cgqRoyTrcTEHm8l-_pE3zCjVA5zK-b0BerewbMwhKBMGJy8HhtiEcQpGiRu9&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584266855245	Marionette	INFO	Stopped listening on port 49711
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584267220485	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileGl5jUL"
+*** You are running in headless mode.
+1584267221066	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584267221399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584267221399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584267221399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584267221400	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584267223592	Marionette	INFO	Listening on port 50027
+1584267223695	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+1584267232172	Marionette	INFO	Stopped listening on port 50027
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584267259096	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilejUWqEP"
+*** You are running in headless mode.
+1584267259470	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584267259740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584267259740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584267259740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584267259740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584267261521	Marionette	INFO	Listening on port 50199
+1584267261546	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584267270263	Marionette	INFO	Stopped listening on port 50199
+Exiting due to channel error.
+1584268085670	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilee04yB2"
+*** You are running in headless mode.
+1584268086330	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584268086657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584268086657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584268086657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584268086657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584268089075	Marionette	INFO	Listening on port 50454
+1584268089186	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584268141968	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileWHiJAd"
+*** You are running in headless mode.
+1584268142394	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584268142675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584268142675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584268142675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584268142675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584268144379	Marionette	INFO	Listening on port 50639
+1584268144419	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584268294718	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileQwb6Lk"
+*** You are running in headless mode.
+1584268295115	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584268295378	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584268295378	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584268295378	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584268295378	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584268297556	Marionette	INFO	Listening on port 50895
+1584268297655	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1584269135538	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileHtnUDF"
+*** You are running in headless mode.
+1584269135995	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584269136276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584269136276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584269136276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584269136277	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584269138101	Marionette	INFO	Listening on port 51169
+1584269138226	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=RZL34Og-_INxrfwTjr2Jw-AqcFVTLLaUGUg7DeAC-lFh0gvLbCfHVDdrmgI48Yev&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=RZL34Og-_INxrfwTjr2Jw-AqcFVTLLaUGUg7DeAC-lFh0gvLbCfHVDdrmgI48Yev&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584269226067	Marionette	INFO	Stopped listening on port 51169
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584269625946	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile6ak9BS"
+*** You are running in headless mode.
+1584269626394	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584269626706	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584269626706	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584269626706	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584269626707	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584269629100	Marionette	INFO	Listening on port 51577
+1584269629139	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584269762971	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileMGSY9p"
+*** You are running in headless mode.
+1584269763391	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584269763675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584269763675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584269763675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584269763675	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584269765719	Marionette	INFO	Listening on port 51803
+1584269765781	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=4-1yPkmCtswBtDW_2yJkfiZ7Jo9uyR4RaKh8iTG4s3ABHCHe5Mwaq9dlX_HK45PO&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=4-1yPkmCtswBtDW_2yJkfiZ7Jo9uyR4RaKh8iTG4s3ABHCHe5Mwaq9dlX_HK45PO&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584269848959	Marionette	INFO	Stopped listening on port 51803
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1584270266709	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileFeDaFj"
+*** You are running in headless mode.
+1584270267535	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584270268039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584270268039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584270268039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584270268039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584270271777	Marionette	INFO	Listening on port 52074
+1584270271860	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=jmDMlcIbyGpmMKOzG3OSD70zUFHt9mpyTkUUBk-Ah6vo190j-t1hJtkmxZtToo1p&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=jmDMlcIbyGpmMKOzG3OSD70zUFHt9mpyTkUUBk-Ah6vo190j-t1hJtkmxZtToo1p&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584270348475	Marionette	INFO	Stopped listening on port 52074
+1584270486643	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile4YzuI5"
+*** You are running in headless mode.
+1584270487081	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584270487592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584270487592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584270487592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584270487592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584270490852	Marionette	INFO	Listening on port 52391
+1584270490905	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=RIJKXEjtujHIa09V3ioZOaKLS3HFgOa_Fo5vQuX9PtvDesPgZX6JPsj1YiPaP9mZ&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=RIJKXEjtujHIa09V3ioZOaKLS3HFgOa_Fo5vQuX9PtvDesPgZX6JPsj1YiPaP9mZ&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=RIJKXEjtujHIa09V3ioZOaKLS3HFgOa_Fo5vQuX9PtvDesPgZX6JPsj1YiPaP9mZ&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=RIJKXEjtujHIa09V3ioZOaKLS3HFgOa_Fo5vQuX9PtvDesPgZX6JPsj1YiPaP9mZ&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584270539550	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileI1AE2f"
+*** You are running in headless mode.
+1584270540009	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584270540383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584270540383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584270540383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584270540383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584270542396	Marionette	INFO	Listening on port 52619
+1584270542467	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584270982644	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile5ymLzJ"
+*** You are running in headless mode.
+1584270983120	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584270983438	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584270983438	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584270983438	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584270983438	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584270985394	Marionette	INFO	Listening on port 52872
+1584270985506	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584271004173	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileMsOkv0"
+*** You are running in headless mode.
+1584271004663	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271004980	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271004981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271004981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271004981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271006577	Marionette	INFO	Listening on port 52937
+1584271006637	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584271037156	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile7vYoLN"
+*** You are running in headless mode.
+1584271037636	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271037914	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271037915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271037915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271037915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271040611	Marionette	INFO	Listening on port 52998
+1584271040654	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1584271059625	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileMXqcrz"
+*** You are running in headless mode.
+1584271060008	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271060272	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271060273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271060273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271060273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271061812	Marionette	INFO	Listening on port 53160
+1584271061876	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1584271175280	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileGAQ2eX"
+*** You are running in headless mode.
+1584271175732	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271176007	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271176007	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271176007	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271176007	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271177791	Marionette	INFO	Listening on port 53227
+1584271177881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=6LRYkLSUWr82iEx47ryfi3RAAjC_bbiWQQ55BJz7q5cB78SjN5GroX_lcbzA7UH1&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584271238282	Marionette	INFO	Stopped listening on port 53227
+1584271270410	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile9yvwMy"
+*** You are running in headless mode.
+1584271270858	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271271138	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271271138	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271271138	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271271138	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271272818	Marionette	INFO	Listening on port 53459
+1584271272863	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=hfK6-lfotj4DGnmyt5pqRDrkTJS4Tv-7atYCvnh7BxfNkJQjt1o1WEdYTbdY5gi_&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584271330833	Marionette	INFO	Stopped listening on port 53459
+1584271491005	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofiler0QYj2"
+*** You are running in headless mode.
+1584271491495	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271491833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271491833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271491833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271491834	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271493562	Marionette	INFO	Listening on port 53712
+1584271493690	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5614331754560452&output=html&h=250&slotname=6054465379&adk=2101391608&adf=1316746178&w=300&lmt=1584271501&psa=0&guci=2.2.0.0.2.2.0.0&format=300x250&url=https%3A%2F%2Fsofifa.com%2Fplayer%2F188545%2Frobert-lewandowski%2Flive&flash=0&wgl=1&dt=1584271501455&bpp=11&bdt=786&fdt=161&idt=161&shv=r20200305&cbv=r20190131&ptt=9&saldr=aa&abxe=1&correlator=8536389700896&frm=20&pv=2&ga_vid=1044058967.1584271501&ga_sid=1584271502&ga_hid=1945387732&ga_fc=0&icsg=138&dssz=11&mdo=0&mso=0&u_tz=240&u_his=1&u_java=0&u_h=768&u_w=1366&u_ah=768&u_aw=1366&u_cd=24&u_nplug=0&u_nmime=0&adx=53&ady=623&biw=1366&bih=694&scr_x=0&scr_y=0&eid=42530291%2C42530312%2C21062174&oid=3&pvsid=1542476262151467&pem=816&rx=0&eae=0&fc=896&brdim=4%2C4%2C4%2C4%2C1366%2C0%2C1366%2C768%2C1366%2C694&vis=1&rsz=%7C%7CeE%7C&abl=CS&pfx=0&fu=16&bc=29&ifi=1&uci=a!1&xpc=Brb7oIXOcp&p=https%3A//sofifa.com&dtd=183, line 1: SecurityError: Permission denied to access property Symbol.toPrimitive on cross-origin object
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584271525273	Marionette	INFO	Stopped listening on port 53712
+1584271652624	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilezHcCAL"
+*** You are running in headless mode.
+1584271653213	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271653627	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271653627	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271653628	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271653628	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271655663	Marionette	INFO	Listening on port 53885
+1584271655721	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584271667885	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileiJy3QS"
+*** You are running in headless mode.
+1584271668259	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271668525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271668525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271668525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271668525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271670587	Marionette	INFO	Listening on port 53956
+1584271670684	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584271678290	Marionette	INFO	Stopped listening on port 53956
+1584271728980	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileVGfc59"
+*** You are running in headless mode.
+1584271729464	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271729733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271729733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271729733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271729733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271732262	Marionette	INFO	Listening on port 54057
+1584271732280	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584271739717	Marionette	INFO	Stopped listening on port 54057
+1584271985063	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileBt3ahT"
+*** You are running in headless mode.
+1584271985596	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584271985922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584271985922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584271985922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584271985922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584271988062	Marionette	INFO	Listening on port 55039
+1584271988156	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1584271996136	Marionette	INFO	Stopped listening on port 55039
+JavaScript error: , line 0: uncaught exception: undefined
+1584272066724	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilerBnN9T"
+*** You are running in headless mode.
+1584272067307	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272067599	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272067599	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272067600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272067600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272069340	Marionette	INFO	Listening on port 55477
+1584272069397	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: uncaught exception: undefined
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1584272151325	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofiley9ecIs"
+*** You are running in headless mode.
+1584272151981	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272152289	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272152289	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272152289	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272152289	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272154157	Marionette	INFO	Listening on port 55907
+1584272154214	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1584272160679	Marionette	INFO	Stopped listening on port 55907
+JavaScript error: , line 0: uncaught exception: undefined
+Exiting due to channel error.
+1584272168898	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilepLwMn9"
+*** You are running in headless mode.
+1584272169300	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272169584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272169584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272169584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272169585	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272171267	Marionette	INFO	Listening on port 56070
+1584272171359	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5614331754560452&output=html&h=250&slotname=6054465379&adk=2101391608&adf=1316746178&w=300&lmt=1584272175&psa=1&guci=2.2.0.0.2.2.0.0&format=300x250&url=https%3A%2F%2Fsofifa.com%2Fplayer%2F189511%2Fsergio-busquets-burgos%2Flive&flash=0&wgl=1&adsid=NT&dt=1584272175474&bpp=12&bdt=648&fdt=220&idt=220&shv=r20200305&cbv=r20190131&ptt=9&saldr=aa&abxe=1&cookie=ID%3D95de146b263aa794%3AT%3D1584272173%3AS%3DALNI_MYd17KpX_GfD5ZP0Vf-n1jC09VzkQ&crv=1&correlator=3019024014730&frm=20&pv=2&ga_vid=1272001867.1584272173&ga_sid=1584272176&ga_hid=231954287&ga_fc=0&icsg=138&dssz=11&mdo=0&mso=0&u_tz=240&u_his=2&u_java=0&u_h=768&u_w=1366&u_ah=768&u_aw=1366&u_cd=24&u_nplug=0&u_nmime=0&adx=53&ady=623&biw=1366&bih=694&scr_x=0&scr_y=0&eid=21065473%2C21065475%2C42530291%2C42530312&oid=3&pvsid=4251494264405713&pem=308&rx=0&eae=0&fc=896&brdim=4%2C4%2C4%2C4%2C1366%2C0%2C1366%2C768%2C1366%2C694&vis=1&rsz=%7C%7CeE%7C&abl=CS&pfx=0&fu=16&bc=29&ifi=1&uci=a!1&xpc=rVjpBKuKRi&p=https%3A//sofifa.com&dtd=240, line 1: SecurityError: Permission denied to access property Symbol.toPrimitive on cross-origin object
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584272180890	Marionette	INFO	Stopped listening on port 56070
+JavaScript error: , line 0: uncaught exception: undefined
+1584272214226	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileNblbQU"
+*** You are running in headless mode.
+1584272214609	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272214867	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272214867	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272214867	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272214867	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272216728	Marionette	INFO	Listening on port 56361
+1584272216836	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+1584272223384	Marionette	INFO	Stopped listening on port 56361
+JavaScript error: , line 0: uncaught exception: undefined
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584272281691	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofiles2bmQu"
+*** You are running in headless mode.
+1584272282149	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272282435	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272282435	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272282435	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272282435	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272284105	Marionette	INFO	Listening on port 56720
+1584272284163	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1584272307036	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilebDBASX"
+*** You are running in headless mode.
+1584272307537	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272307884	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272307884	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272307884	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272307884	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272309946	Marionette	INFO	Listening on port 56908
+1584272310068	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1584272321606	Marionette	INFO	Stopped listening on port 56908
+1584272697178	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileY8p39b"
+*** You are running in headless mode.
+1584272697668	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272697930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272697930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272697930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272697930	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272699978	Marionette	INFO	Listening on port 58621
+1584272700063	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584272700201	Marionette	INFO	Stopped listening on port 58621
+1584272795823	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileA7t4gZ"
+*** You are running in headless mode.
+1584272796263	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584272796544	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584272796545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584272796545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584272796545	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584272798115	Marionette	INFO	Listening on port 59083
+1584272798173	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1584273060775	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileRjjXN5"
+1584273061267	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584273061530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584273061530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584273061530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584273061530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584273063282	Marionette	INFO	Listening on port 60039
+1584273063340	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=9wwI8sH6JWCWJ5lUs38AQX6KHEUoqdUfIhiImT7VBJA9qN-6QoKok_kcdJzDAGZ8&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584273145956	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilegmcI6D"
+1584273146385	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584273146640	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584273146640	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584273146640	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584273146641	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584273148136	Marionette	INFO	Listening on port 60249
+1584273148202	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=zA2SrGdTvXhfM_OMRn_KQcEaRNXFANDFag2YNxQzj10Y6_DcUBhbzwRIcsXOMHYE&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=zA2SrGdTvXhfM_OMRn_KQcEaRNXFANDFag2YNxQzj10Y6_DcUBhbzwRIcsXOMHYE&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584273266706	Marionette	INFO	Stopped listening on port 60249
+1584273355204	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileu59O55"
+1584273355900	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584273356213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584273356214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584273356214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584273356214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584273358450	Marionette	INFO	Listening on port 49327
+1584273358488	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=OGDKI-NY90czX-D2ppD5bvY9PSdel16hnJlkAQ9-2hUe8onVp3iK6n-_g5E5vjcw&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=OGDKI-NY90czX-D2ppD5bvY9PSdel16hnJlkAQ9-2hUe8onVp3iK6n-_g5E5vjcw&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=OGDKI-NY90czX-D2ppD5bvY9PSdel16hnJlkAQ9-2hUe8onVp3iK6n-_g5E5vjcw&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=OGDKI-NY90czX-D2ppD5bvY9PSdel16hnJlkAQ9-2hUe8onVp3iK6n-_g5E5vjcw&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=OGDKI-NY90czX-D2ppD5bvY9PSdel16hnJlkAQ9-2hUe8onVp3iK6n-_g5E5vjcw&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1584274080779	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilemDqAZG"
+1584274081300	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274081562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274081562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274081562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274081562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274083386	Marionette	INFO	Listening on port 50346
+1584274083470	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274197549	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileiRaY8S"
+1584274198133	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274198471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274198471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274198471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274198471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274200678	Marionette	INFO	Listening on port 50911
+1584274200745	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274227199	Marionette	INFO	Stopped listening on port 50346
+1584274230083	Marionette	INFO	Stopped listening on port 50911
+1584274233618	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileVOgNUw"
+1584274234010	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274234257	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274234257	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274234257	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274234257	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274235846	Marionette	INFO	Listening on port 51142
+1584274235877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274287621	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilerDy2r2"
+1584274288193	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274288547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274288547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274288547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274288547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274290261	Marionette	INFO	Listening on port 51438
+1584274290293	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274299803	Marionette	INFO	Stopped listening on port 51142
+1584274321708	Marionette	INFO	Stopped listening on port 51438
+1584274326775	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileacwF7C"
+1584274327282	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274327667	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274327667	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274327667	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274327668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274329381	Marionette	INFO	Listening on port 51692
+1584274329445	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274335151	Marionette	INFO	Stopped listening on port 51692
+1584274438732	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileW1Vjx2"
+1584274439268	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274439674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274439674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274439674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274439674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274441273	Marionette	INFO	Listening on port 52228
+1584274441310	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274464180	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileGXzCqq"
+1584274464609	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274464876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274464876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274464876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274464876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274466622	Marionette	INFO	Listening on port 52399
+1584274466642	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274471688	Marionette	INFO	Stopped listening on port 52399
+1584274509220	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile4ynR16"
+1584274509741	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274510144	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274510144	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274510144	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274510144	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274511976	Marionette	INFO	Listening on port 52654
+1584274512008	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274518827	Marionette	INFO	Stopped listening on port 52654
+1584274570827	Marionette	INFO	Stopped listening on port 52228
+1584274581907	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilekbepoF"
+1584274582405	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274582770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274582770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274582770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274582770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274584523	Marionette	INFO	Listening on port 53049
+1584274584551	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274593365	Marionette	INFO	Stopped listening on port 53049
+1584274620673	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileVboKqE"
+1584274621089	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274621350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274621350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274621350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274621350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274623033	Marionette	INFO	Listening on port 53282
+1584274623125	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274625301	Marionette	INFO	Stopped listening on port 53282
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584274649923	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile4zLZ10"
+1584274650394	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274650765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274650765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274650765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274650766	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274652629	Marionette	INFO	Listening on port 53466
+1584274652734	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274673445	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileZkDr8Y"
+1584274674017	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274674419	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274674419	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274674419	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274674419	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274676398	Marionette	INFO	Listening on port 53636
+1584274676463	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274677296	Marionette	INFO	Stopped listening on port 53466
+1584274678999	Marionette	INFO	Stopped listening on port 53636
+1584274696803	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilef80cuf"
+1584274697424	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274698132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274698132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274698132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274698132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274704711	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileMJxEiF"
+1584274705198	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274705778	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274705782	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274705783	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274705783	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274707807	Marionette	INFO	Listening on port 53861
+1584274707868	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274710185	Marionette	INFO	Stopped listening on port 53861
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1584274718683	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileV8ahvq"
+1584274719278	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274719616	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274719616	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274719616	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274719617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274721752	Marionette	INFO	Listening on port 53991
+1584274721856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584274725222	Marionette	INFO	Stopped listening on port 53991
+1584274761605	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileq5YdGX"
+1584274762373	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274762818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274762818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274762818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274762818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274764817	Marionette	INFO	Listening on port 54246
+1584274764906	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=38895&dmpenabled=false&filterDMP=&csenabled=true&d=a9R49m00-Q4GVZNnYLVctPxzEpGC7cUdR-yd2KAcovsun-Qk4NSs1iJZZK9v0-B3&gdpr=0&cmpNeeded=false, line 2: SecurityError: The operation is insecure.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+Exiting due to channel error.
+1584274900443	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofile5AjIRB"
+1584274900920	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274901361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274901361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274901362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274901362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274921047	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofiledUAOeZ"
+1584274921497	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584274921817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584274921818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584274921818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584274921818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584274923506	Marionette	INFO	Listening on port 55139
+1584274923524	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584275017485	Marionette	INFO	Stopped listening on port 55139
+1584278413080	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofileq12e3W"
+1584278413951	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584278414297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584278414297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584278414297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584278414297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584278416634	Marionette	INFO	Listening on port 59018
+1584278416663	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: uncaught exception: [object Object]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1584278477274	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ks/h8sfstk57ps3yhykcjlhhmlr0000gn/T/rust_mozprofilejobnXc"
+1584278477817	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584278478133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584278478133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584278478134	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584278478134	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1584278479774	Marionette	INFO	Listening on port 59198
+1584278479840	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200305/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: , line 0: uncaught exception: [object Object]
+JavaScript error: , line 0: uncaught exception: [object Object]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://player.daznservices.com/eplayer/assets/urls.json, line 1: SyntaxError: unexpected token: ':'
+1584278706901	Marionette	INFO	Stopped listening on port 59198
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

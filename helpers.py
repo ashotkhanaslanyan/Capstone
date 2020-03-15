@@ -52,3 +52,21 @@ def create_or_open(file_dest, columns):
     except:
         data_frame = pd.DataFrame(columns=columns)
     return data_frame
+
+def create_empty_df(file_dest, columns):
+    data_frame = pd.DataFrame(columns=columns)
+    data_frame.to_csv(file_dest)
+
+
+def create_csv_dfs():
+    create_empty_df("./Scrapped_Data/injuries.csv", columns = ["sofifa_id","Name","Reason","Start Date","End Date"])
+    create_empty_df("./Scrapped_Data/trophies.csv", columns = ["sofifa_id","Name","Competition","Trophy","Season"])
+    create_empty_df("./Scrapped_Data/markval.csv", columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
+
+def check_if_exists(dest):
+    result = True
+    try:
+        open(dest)
+    except IOError:
+        result = False
+    return result

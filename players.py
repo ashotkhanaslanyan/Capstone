@@ -13,20 +13,22 @@ import time
 import helpers as hp
 import functools
 import re
+import requests
 
 class Player:
-    def __init__(self, id, link, driver):
+    def __init__(self, id, link, driver, df_path, stats_path, nat_stats_path, transfers_path):
         self.name = "no_info"
         self.driver = driver
         self.id = id
         self.link = link
         self.info_df = None
         self.followers = None
-        self.stats_df = None
-        self.nat_stats = None
+        self.df_path = df_path
+        self.stats_path = stats_path
+        self.nat_stats_path = nat_stats_path
+        self.transfers_path = transfers_path
         self.position = None
         self.tm_Id = None
-        self.transfers_df = None
         print(self.id)
         self.get_tm_id()
         self.get_info()
@@ -35,7 +37,7 @@ class Player:
         self.get_player_stats()
         self.get_nat_stats()
         self.get_transfers()
-    
+
     def get_transfers(self):
         print("trying to get player's transfers")
         transfers = pd.DataFrame(columns=['Player_Id', "tm_Id", 'Name', 'From', 'To', 'Fee', 'Market Value', 'Season', 'Date'])
@@ -59,9 +61,10 @@ class Player:
                 }
                 transfers = transfers.append(data, ignore_index=True)
                 transfers.set_index("tm_Id", inplace=True, drop=False)
+                transfers.to_csv(self.transfers_path, mode = "a", header= False)
         except Exception as e:
             print(str(e))
-        self.transfers_df = transfers
+        # self.transfers_df = transfers
 
     def go_detailed_page(self):
         detailed = self.driver.find_elements_by_css_selector(".kartei-button-body")[1]
@@ -93,16 +96,18 @@ class Player:
         try:
             insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
             if not(insta_link is None):
-                self.driver.get(insta_link)
-                bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
-                followers = bs_obj.find_all("span", class_="g47SY")[1]["title"]
+                url = insta_link + "?__a=1"
+                r = requests.get(url = url) 
+                data = r.json()
+                followers = data["graphql"]["user"]["edge_followed_by"]["count"]
+                print(followers)
         except Exception as e:
             print("no info about followers")
             print(str(e))
             followers = "no info"
 
         self.followers = followers
-    
+
     def extract_cell(self, key):
         result = None
         df = self.info_df
@@ -114,22 +119,32 @@ class Player:
         return result
 
     def data_to_append(self):
-        data = {
-            'Id': self.id,
-            'tm_Id': self.tm_Id,
-            'Name':  self.name, 
-            'Team':  self.extract_cell("Current club:"), 
-            'Nationality':  self.extract_cell("Citizenship:"), 
-            'Date of Birth':  self.extract_cell("Date of birth:"), 
-            'Height':  self.extract_cell("Height:"), 
-            'Strong Foot':  self.extract_cell("Foot:"), 
-            'Position':  self.extract_cell("Position:"), 
-            'Joined':  self.extract_cell("Joined:"), 
-            'Contract Expires':  self.extract_cell("Contract expires:"), 
-            'Followers':  self.followers
-        }
-        self.position = data["Position"]
-        self.data = data
+        try:
+            data = {
+                'Id': self.id,
+                'tm_Id': self.tm_Id,
+                'Name':  self.name,
+                'Team':  self.extract_cell("Current club:"),
+                'Nationality':  self.extract_cell("Citizenship:"),
+                'Date of Birth':  self.extract_cell("Date of birth:"),
+                'Height':  self.extract_cell("Height:"),
+                'Strong Foot':  self.extract_cell("Foot:"),
+                'Position':  self.extract_cell("Position:"),
+                'Joined':  self.extract_cell("Joined:"),
+                'Contract Expires':  self.extract_cell("Contract expires:"),
+                'Followers':  self.followers
+            }
+            df = pd.DataFrame(columns = ['Id','tm_Id','Name', 'Team', 'Nationality', 'Date of Birth', 'Height', 'Strong Foot', 'Position', 'Joined', 'Contract Expires', 'Followers'])
+            df = df.append(data, ignore_index = True)
+            df.set_index("tm_Id", inplace=True, drop=False)
+            df.to_csv(self.df_path, mode = "a", header= False)
+            self.position = data["Position"]
+            self.data = data
+        except Exception as e:
+            print(str(e))
+        # self.position = data["Position"]
+        # self.data = data
+        # self.df = df
 
     def get_player_stats(self):
         print("trying to get the player's statistics")
@@ -163,11 +178,12 @@ class Player:
                 drop_cols = []
             id_vars = ["Player_Id","tm_Id","Name","Team","Season","Competition"]
             df_long = hp.clean_stats_frame(df = df, teams = teams, team_ind = 1, player_id = self.id,
-            player_name = self.name, columns = columns, drop_indexes = drop_indexes, 
+            player_name = self.name, columns = columns, drop_indexes = drop_indexes,
             drop_cols = drop_cols, id_vars = id_vars, tm_id = self.tm_Id)
+            df_long.set_index("tm_Id", inplace=True, drop=False)
+            df_long.to_csv(self.stats_path, mode = "a", header= False)
         except Exception as e:
             print(str(e))
-        self.stats_df = df_long
 
     def get_nat_stats(self):
         print("trying to get the player's national team statistics")
@@ -200,7 +216,7 @@ class Player:
             df_long = hp.clean_stats_frame(df = df, teams = nat_team, team_ind = 0, player_id = self.id,
             player_name = self.name, columns = columns, drop_indexes = drop_indexes,
             drop_cols = drop_cols, id_vars = id_vars, tm_id = self.tm_Id)
+            df_long.set_index("tm_Id", inplace=True, drop=False)
+            df_long.to_csv(self.nat_stats_path, mode = "a", header= False)
         except Exception as e:
             print(str(e))
-        self.nat_stats = df_long
-

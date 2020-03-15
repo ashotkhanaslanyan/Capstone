@@ -14,13 +14,11 @@ import requests
 import helpers as hp
 import math
 
-columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"]
-mvs = hp.create_or_open("./Scrapped_Data/markval.csv", columns)
+# columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"]
+# mvs = hp.create_or_open("./Scrapped_Data/markval.csv", columns)
 
 
 def scrap_mvs(link, driver, start=2005, end=2020):
-    team_df = pd.DataFrame(
-        columns=['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
     try:
         for season in range(start, end):
             print("getting mvs for " + str(season))
@@ -45,11 +43,10 @@ def scrap_mvs(link, driver, start=2005, end=2020):
             df.insert(2, "League", league)
             df.insert(3, "Season", mv_season)
             df.insert(5, "tm_Id", ids[::2])
-            team_df = team_df.append(df)
-            team_df.set_index("tm_Id", drop = False, inplace = True)
+            df.set_index("tm_Id", drop = False, inplace = True)
+            df.to_csv("Scrapped_Data/markval.csv", mode = 'a', header = False)
     except Exception as e:
         print(str(e))
-    return team_df
 
 
 opts = Options()
@@ -58,18 +55,16 @@ driver = webdriver.Firefox(options=opts)
 
 team_links = pd.read_csv("Prerequisit Data/teamlinks.csv")["Team_url"]
 
-start = 0
-end = 2
+start = 4
+end = 8
+if(not(hp.check_if_exists("Scrapped_Data/marvkal.csv"))):
+    hp.create_empty_df("Scrapped_Data/markval.csv", columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
 for team in range(start, end):
     try:
         link = team_links[team]
-        mvs_df = scrap_mvs(link=link, driver=driver, start = 2010, end = 2012)
-        mvs = mvs.append(mvs_df)
+        scrap_mvs(link=link, driver=driver, start = 2010, end = 2012)
     except Exception as e:
         print(str(e))
-        print(" writtingto csv stopped at", str(mvs.tail(1)["tm_Id"]))
-        mvs.to_csv("Scrapped_Data/markval.csv")
         driver.quit()
 
 driver.quit()
-mvs.to_csv("Scrapped_Data/markval.csv")
