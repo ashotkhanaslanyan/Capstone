@@ -19,8 +19,8 @@ import math
 
 
 def scrap_mvs(link, driver, start=2005, end=2020):
-    try:
-        for season in range(start, end):
+    for season in range(start, end):
+        try:
             print("getting mvs for " + str(season))
             link = link[:-4] + str(season)
             driver.get(link)
@@ -45,8 +45,8 @@ def scrap_mvs(link, driver, start=2005, end=2020):
             df.insert(5, "tm_Id", ids[::2])
             df.set_index("tm_Id", drop = False, inplace = True)
             df.to_csv("Scrapped_Data/markval.csv", mode = 'a', header = False)
-    except Exception as e:
-        print(str(e))
+        except Exception as e:
+            print(str(e))
 
 
 opts = Options()
