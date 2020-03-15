@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
 import time
 import helpers as hp
 import functools
+import requests
 import re
 
 class Player:
@@ -93,9 +94,11 @@ class Player:
         try:
             insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
             if not(insta_link is None):
-                self.driver.get(insta_link)
-                bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
-                followers = bs_obj.find_all("span", class_="g47SY")[1]["title"]
+                url = insta_link + "?__a=1"
+                r = requests.get(url = url) 
+                data = r.json()
+                followers = data["graphql"]["user"]["edge_followed_by"]["count"]
+                print(followers)
         except Exception as e:
             print("no info about followers")
             print(str(e))
