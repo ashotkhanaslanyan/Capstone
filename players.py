@@ -146,7 +146,7 @@ class Player:
             bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
             table = bs_obj.find_all('table')[1]
             df = pd.read_html(str(table))[0]
-            position = self.position
+            position = self.extract_cell("Position:")
             if(position == "Goalkeeper"):
                 columns = ["Season","Team","Competition","Squad",
                     "Appearances","PPG","Goals","Own goals","Substitutions on",
