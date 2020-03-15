@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, WebDriverException
 from selenium.webdriver.firefox.options import Options
+from notify_run import Notify
 import numpy as np
 import pandas as pd
 from csv import writer
@@ -14,8 +15,13 @@ import csv
 import players as pl
 import helpers as hp
 
+notify = Notify()
+notify.register()
+print(notify.info())
+
+
 opts = Options()
-opts.headless = False
+opts.headless = True
 driver = webdriver.Firefox(options= opts)
 
 def start_scrapping(driver, start, end, player_links):
@@ -36,8 +42,10 @@ def start_scrapping(driver, start, end, player_links):
             dests = list(dest_cols.keys())
             player = pl.Player(id = id, link = link, driver = driver, df_path = dests[0], stats_path = dests[1],
             nat_stats_path = dests[2], transfers_path = dests[3])
+            notify.send(str(id))
         except Exception as e:
             print("The exception message", str(e))
+            notify.send(str(e))
             break
         del player
     driver.quit()
@@ -47,6 +55,6 @@ def start_scrapping(driver, start, end, player_links):
 player_links = pd.read_csv('Prerequisit Data/playerlinks.csv')['Player_url']
 
 
-start = 0; end = 10
+start = 0; end = 1000
 
 start_scrapping(driver, start = start, end = end, player_links = player_links)
