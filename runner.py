@@ -14,6 +14,9 @@ import time
 import csv
 import players as pl
 import helpers as hp
+import sys
+
+# print(sys.argv[0], sys.argv[1], sys.argv[2])
 
 notify = Notify()
 notify.register()
@@ -55,6 +58,16 @@ def start_scrapping(driver, start, end, player_links):
 player_links = pd.read_csv('Prerequisit Data/playerlinks.csv')['Player_url']
 
 
-start = 0; end = 1000
+def start_end(st, end):
+    try:
+        start = int(sys.argv[1])
+        end = int(sys.argv[2])
+    except:
+        start = st
+        end = end
+    return start, end
+
+
+start,end = start_end(10,20)
 
 start_scrapping(driver, start = start, end = end, player_links = player_links)

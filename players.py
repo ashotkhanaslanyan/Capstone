@@ -96,11 +96,14 @@ class Player:
         try:
             insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
             if not(insta_link is None):
-                url = insta_link + "?__a=1"
+                pat = r'.com?\/(.*)/.*'
+                insta = re.findall(pat, insta_link)[0]
+                username = insta.replace("/www.instagram.com/", "")
+                def_url = "https://www.instagram.com/<username>/?__a=1"
+                url = def_url.replace("<username>", username)
                 r = requests.get(url = url) 
                 data = r.json()
                 followers = data["graphql"]["user"]["edge_followed_by"]["count"]
-                print(followers)
         except Exception as e:
             print("no info about followers")
             print(str(e))
