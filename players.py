@@ -93,6 +93,7 @@ class Player:
         print("trying to get information about the player's followers")
         insta_xpath = "//*[@title='Instagram']"
         insta_link = None
+        followers = None
         try:
             insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
             if not(insta_link is None):
@@ -104,10 +105,24 @@ class Player:
                 data = r.json()
                 followers = data["graphql"]["user"]["edge_followed_by"]["count"]
         except Exception as e:
-            print("no info about followers")
+            print("no info about followers, trying to visit the page")
             print(str(e))
-            followers = "no info"
-
+            try:
+                insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
+                if not(insta_link is None):
+                    self.driver.get(insta_link)
+                    time.sleep(2)
+                    bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
+                    followers = bs_obj.find_all("span", class_="g47SY")[1]["title"]
+            except Exception as e:
+                print("another exception, catching it")
+                print(str(e))
+        finally:
+            if(followers is None):
+                print("nothing found")
+                followers = "no info"
+            else:
+                print("number of followers",followers)
         self.followers = followers
 
     def extract_cell(self, key):
