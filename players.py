@@ -16,8 +16,8 @@ import re
 import requests
 
 class Player:
-    def __init__(self, id, link, driver, df_path, stats_path, nat_stats_path, transfers_path):
-        self.name = "no_info"
+    def __init__(self, id, link, driver, df_path, stats_path, nat_stats_path, transfers_path, name):
+        # self.name = "no_info"
         self.driver = driver
         self.id = id
         self.link = link
@@ -29,6 +29,7 @@ class Player:
         self.transfers_path = transfers_path
         self.position = None
         self.tm_Id = None
+        self.name = name
         print(self.id)
         self.get_tm_id()
         self.get_info()
@@ -80,12 +81,12 @@ class Player:
         try:
             self.driver.get(self.link)
             bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
-            name = bs_obj.find_all('h1')[0].get_text()
+            # name = bs_obj.find_all('h1')[0].get_text()
             table = bs_obj.find_all('table')[0]
             df = pd.read_html(str(table))[0]
             df.columns = ["Key", "Value"]
             self.info_df = df
-            self.name = name
+            # self.name = name
         except Exception as e:
             print(str(e))
 

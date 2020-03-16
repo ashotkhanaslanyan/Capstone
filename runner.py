@@ -42,9 +42,10 @@ def start_scrapping(driver, start, end, player_links):
         player = None
         try:
             link = player_links[id]
+            name = player_names[id]
             dests = list(dest_cols.keys())
             player = pl.Player(id = id, link = link, driver = driver, df_path = dests[0], stats_path = dests[1],
-            nat_stats_path = dests[2], transfers_path = dests[3])
+            nat_stats_path = dests[2], transfers_path = dests[3], name = name)
             notify.send(str(id))
         except Exception as e:
             print("The exception message", str(e))
@@ -56,7 +57,7 @@ def start_scrapping(driver, start, end, player_links):
 
 
 player_links = pd.read_csv('Prerequisit Data/playerlinks.csv')['Player_url']
-
+player_names = pd.read_csv('Prerequisit Data/playerlinks.csv')['Name']
 
 def start_end(st, end):
     try:
@@ -68,6 +69,6 @@ def start_end(st, end):
     return start, end
 
 
-start,end = start_end(10,20)
+start,end = start_end(6459,6664)
 
 start_scrapping(driver, start = start, end = end, player_links = player_links)
