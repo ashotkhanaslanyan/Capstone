@@ -13,9 +13,23 @@ from bs4 import BeautifulSoup
 import requests
 import helpers as hp
 import math
+import sys
+from notify_run import Notify
 
-# columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"]
-# mvs = hp.create_or_open("./Scrapped_Data/markval.csv", columns)
+
+notify = Notify()
+notify.register()
+print(notify.info())
+
+
+def get_team_league(bs_obj):
+    try:
+        league = bs_obj.find_all('span', class_="hauptpunkt")[0].find('a').get_text().strip()
+        name = bs_obj.find_all('h1')[0].get_text().strip()
+    except:
+        league = "no_info"
+        name = "no_info"
+    return name, league
 
 
 def scrap_mvs(link, driver, start=2005, end=2020):
@@ -35,10 +49,7 @@ def scrap_mvs(link, driver, start=2005, end=2020):
             df = df[df['#'].notna()]
             df = df.drop(["#"], axis=1)
             df.columns = ["Name", "Market Value"]
-            club = driver.find_element_by_xpath(
-                "//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'dataName', ' ' ))]//span").text
-            league = driver.find_element_by_xpath(
-                "//*[contains(concat( ' ', @class, ' ' ), concat( ' ', 'hauptpunkt', ' ' ))]//a").text
+            club, league = get_team_league(bs_obj)
             df.insert(1, "Club", club)
             df.insert(2, "League", league)
             df.insert(3, "Season", mv_season)
@@ -54,17 +65,34 @@ opts.headless = True
 driver = webdriver.Firefox(options=opts)
 
 team_links = pd.read_csv("Prerequisit Data/teamlinks.csv")["Team_url"]
-
-start = 4
-end = 8
-if(not(hp.check_if_exists("Scrapped_Data/markval.csv"))):
-    hp.create_empty_df("Scrapped_Data/markval.csv", columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
-for team in range(start, end):
+def start_end(st, end):
     try:
-        link = team_links[team]
-        scrap_mvs(link=link, driver=driver, start = 2010, end = 2012)
-    except Exception as e:
-        print(str(e))
-        driver.quit()
+        start = int(sys.argv[1])
+        end = int(sys.argv[2])
+    except:
+        start = st
+        end = end
+    return start, end
+start,end = start_end(500,520)
+
+def start_scrapper(start, end):
+    if(not(hp.check_if_exists("Scrapped_Data/markval.csv"))):
+        hp.create_empty_df("Scrapped_Data/markval.csv", columns = ['Name', 'Club', 'League', 'Season', 'Market Value', "tm_Id"])
+    for team in range(start, end):
+        try:
+            link = team_links[team]
+            st = 2005; end = 2020
+            print(team)
+            notify.send(str(team))
+            if(team == 501):
+                st = 2015
+            scrap_mvs(link=link, driver=driver, start=st, end=end)
+        except Exception as e:
+            print(str(e))
+            notify.send(str(e))
+            driver.quit()
+
+start_scrapper(start, end)
+
 
 driver.quit()
