@@ -97,8 +97,7 @@ class Player:
             insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
             if not(insta_link is None):
                 pat = r'.com?\/(.*)/.*'
-                insta = re.findall(pat, insta_link)[0]
-                username = insta.replace("/www.instagram.com/", "")
+                username = re.findall(pat, insta_link)[0]
                 def_url = "https://www.instagram.com/<username>/?__a=1"
                 url = def_url.replace("<username>", username)
                 r = requests.get(url = url) 
