@@ -25,7 +25,7 @@ print(notify.info())
 
 
 opts = Options()
-opts.headless = False
+opts.headless = True
 driver = webdriver.Firefox(options= opts)
 
 def start_scrapping(driver, start, end, player_links):
