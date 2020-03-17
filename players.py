@@ -80,6 +80,7 @@ class Player:
         print("trying to get information about the player")
         try:
             self.driver.get(self.link)
+            time.sleep(3)
             bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
             # name = bs_obj.find_all('h1')[0].get_text()
             table = bs_obj.find_all('table')[0]
@@ -112,7 +113,7 @@ class Player:
                 insta_link = self.driver.find_element_by_xpath(insta_xpath).get_attribute("href")
                 if not(insta_link is None):
                     self.driver.get(insta_link)
-                    time.sleep(2)
+                    time.sleep(4)
                     bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
                     followers = bs_obj.find_all("span", class_="g47SY")[1]["title"]
             except Exception as e:

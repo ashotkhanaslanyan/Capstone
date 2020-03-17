@@ -15,6 +15,7 @@ import csv
 import players as pl
 import helpers as hp
 import sys
+import instasignin as inst
 
 # print(sys.argv[0], sys.argv[1], sys.argv[2])
 
@@ -24,7 +25,7 @@ print(notify.info())
 
 
 opts = Options()
-opts.headless = True
+opts.headless = False
 driver = webdriver.Firefox(options= opts)
 
 def start_scrapping(driver, start, end, player_links):
@@ -38,6 +39,7 @@ def start_scrapping(driver, start, end, player_links):
         if(not(hp.check_if_exists(dest = dest))):
             hp.create_empty_df(file_dest = dest, columns = cols)
 
+    inst.sign_in(driver)
     for id in range(start, end):
         player = None
         try:
@@ -69,6 +71,6 @@ def start_end(st, end):
     return start, end
 
 
-start,end = start_end(6459,6664)
+start,end = start_end(1084,1086)
 
 start_scrapping(driver, start = start, end = end, player_links = player_links)
