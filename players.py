@@ -80,7 +80,7 @@ class Player:
         print("trying to get information about the player")
         try:
             self.driver.get(self.link)
-            time.sleep(3)
+            # time.sleep(3)
             bs_obj = BeautifulSoup(self.driver.page_source, 'html.parser')
             # name = bs_obj.find_all('h1')[0].get_text()
             table = bs_obj.find_all('table')[0]
