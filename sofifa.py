@@ -14,21 +14,33 @@ links = players_20["player_url"]
 ids = players_20["sofifa_id"]
 names = players_20["short_name"]
 
+def get_trophies(bs_obj, class_, sofifa_id, name):
+    try:
+        table_html = bs_obj.find('table',class_)
+        table = pd.read_html(str(table_html))[0]
+        trophies = hp.clean_trophies(table, sofifa_id=sofifa_id, name = name)
+        trophies.set_index("sofifa_id", drop = False, inplace = True)
+        trophies.to_csv("Scrapped_Data/trophies.csv", mode = 'a', header = False)
+    except Exception as e:
+        print(str(e))
+
+def get_injuries(bs_obj, class_, sofifa_id, name):
+    try:
+        table_html = bs_obj.find('table',class_)
+        table = pd.read_html(str(table_html))[0]
+        injuries = hp.clean_injuries(table, sofifa_id=sofifa_id, name = name)
+        injuries.set_index("sofifa_id", drop = False, inplace = True)
+        injuries.to_csv("Scrapped_Data/sidelined.csv", mode = 'a', header = False)
+    except Exception as e:
+        print(str(e))    
+
+
 def get_injuries_trophies(link, driver, sofifa_id, name):
-    injuries = None; trophies = None
     try:
         driver.get(link)
         bs_obj = BeautifulSoup(driver.page_source, 'html.parser')
-        table = bs_obj.find('table', class_ = "real-trophies no-link table-hover table trophies trophies-table")
-        table_1 = bs_obj.find('table', class_ = "real-sidelined no-link table-hover sidelined table")
-        trophy_df = pd.read_html(str(table))[0]
-        injury_df = pd.read_html(str(table_1))[0]
-        trophies = hp.clean_trophies(trophy_df, sofifa_id=sofifa_id, name = name)
-        injuries = hp.clean_injuries(injury_df, sofifa_id=sofifa_id, name = name)
-        injuries.set_index("sofifa_id", drop = False, inplace = True)
-        trophies.set_index("sofifa_id", drop = False, inplace = True)
-        injuries.to_csv("Scrapped_Data/sidelined.csv", mode = 'a', header = False)
-        trophies.to_csv("Scrapped_Data/trophies.csv", mode = 'a', header = False)
+        get_trophies(bs_obj, "real-trophies no-link table-hover table trophies trophies-table", sofifa_id, name)
+        get_injuries(bs_obj, "real-sidelined no-link table-hover sidelined table", sofifa_id, name)
     except Exception as e:
         print(str(e))
 
@@ -54,4 +66,4 @@ def start_scrapping(start,end,links,driver):
         print(str(e))
     driver.quit()
 
-start_scrapping(start = 20, end = 23, links = links, driver = driver)
+start_scrapping(start = 93, end = 122, links = links, driver = driver)
